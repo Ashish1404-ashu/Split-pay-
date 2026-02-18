@@ -1,0 +1,272 @@
+/*<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payments | SplitPay</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ================= RESET ================= */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:#f8f9fa;
+    padding-top:80px;
+    color:#222;
+}
+
+/* ================= HEADER ================= */
+header{
+    background:#3e3676;
+    color:white;
+    height:70px;
+    display:flex;
+    align-items:center;
+    padding:0 40px;
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1000;
+}
+
+header h1{
+    font-size:28px;
+    font-weight:600;
+}
+
+header nav{
+    margin-left:auto;
+}
+
+header nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:16px;
+    transition:0.3s;
+}
+
+header nav a:hover{
+    color:#ffc439;
+}
+
+/* ================= PAGE TITLE ================= */
+.page-title{
+    text-align:center;
+    margin:50px 0 30px;
+}
+
+.page-title h1{
+    font-size:38px;
+    color:#3e3676;
+}
+
+/* ================= PAYMENT OPTIONS ================= */
+.payment-options{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:20px 40px 60px;
+    flex-wrap:wrap;
+}
+
+.payment-card{
+    background:white;
+    width:300px;
+    border-radius:18px;
+    box-shadow:0 12px 30px rgba(0,0,0,0.1);
+    overflow:hidden;
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.payment-card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.payment-card h3{
+    padding:18px;
+    text-align:center;
+    color:#3e3676;
+    font-size:18px;
+}
+
+.payment-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.18);
+}
+
+/* ================= INFO IMAGE ================= */
+.info-section{
+    display:flex;
+    justify-content:center;
+    padding:60px 20px;
+}
+
+.info-section img{
+    max-width:800px;
+    width:90%;
+    border-radius:25px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* ================= FOOTER LINKS ================= */
+.feature5{
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+    padding:60px 20px;
+    background:white;
+}
+
+.feature51{
+    max-width:220px;
+}
+
+.feature51 h1,
+.feature51 h3{
+    color:#3e3676;
+    margin-bottom:12px;
+}
+
+.feature51 ul{
+    list-style:none;
+}
+
+.feature51 ul li{
+    margin-bottom:8px;
+}
+
+.feature51 ul li a{
+    text-decoration:none;
+    color:#555;
+    font-size:15px;
+}
+
+.feature51 ul li a:hover{
+    color:#d75df5;
+}
+
+/* ================= FOOTER ================= */
+footer{
+    background:#3e3676;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+footer a{
+    color:#ffc439;
+    text-decoration:none;
+}
+
+footer a:hover{
+    text-decoration:underline;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:768px){
+    .payment-card{
+        width:100%;
+        max-width:340px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+    <h1>Split<span style="color:#ffc439;">Pay</span></h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="payment.html">Services</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="help.html">Help</a>
+        <a href="contactus.html">Contact</a>
+    </nav>
+</header>
+
+<!-- ================= TITLE ================= -->
+<div class="page-title">
+    <h1>Choose Your Payment Option</h1>
+</div>
+
+<!-- ================= PAYMENT OPTIONS ================= -->
+<section class="payment-options">
+
+    <div class="payment-card">
+        <img src="merchant.png" alt="Merchant Payment">
+        <h3>Merchant Payments</h3>
+    </div>
+
+    <div class="payment-card">
+        <img src="upi.png" alt="UPI Payment">
+        <h3>UPI Payments</h3>
+    </div>
+
+    <div class="payment-card">
+        <img src="bill.png" alt="Bill Payment">
+        <h3>Bill Payments</h3>
+    </div>
+
+</section>
+
+<!-- ================= INFO ================= -->
+
+<!-- ================= FOOTER LINKS ================= -->
+<section class="feature5">
+
+    <div class="feature51">
+        <h1>SplitPay</h1>
+        <p>Smart payments, simplified.</p>
+    </div>
+
+    <div class="feature51">
+        <h3>Services</h3>
+        <ul>
+            <li><a href="#">EV Pay</a></li>
+            <li><a href="#">Chunk Pay</a></li>
+            <li><a href="#">Payments</a></li>
+        </ul>
+    </div>
+
+    <div class="feature51">
+        <h3>Company</h3>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Privacy</a></li>
+        </ul>
+    </div>
+
+    <div class="feature51">
+        <h3>Support</h3>
+        <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">How to Pay</a></li>
+        </ul>
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <p>© 2026 SplitPay | <a href="#">Privacy</a> | <a href="#">Terms</a></p>
+</footer>
+
+</body>
+</html>
+*/

@@ -1,0 +1,240 @@
+/* ===============================
+   Global Reset & Base Styles
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #222;
+}
+
+/* ===============================
+   Header
+================================ */
+header {
+    background-color: #3e3676;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+header nav {
+    margin-left: auto;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #d75df5;
+}
+
+/* Space for fixed header */
+body {
+    padding-top: 80px;
+}
+
+/* ===============================
+   Hero Section
+================================ */
+.hero {
+    background-image: linear-gradient(
+        rgba(62, 54, 118, 0.75),
+        rgba(62, 54, 118, 0.75)
+    ),
+    url('web4.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    color: white;
+}
+
+.hero div {
+    width: 45%;
+}
+
+#div1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 46px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.hero button {
+    background-color: #ffc439;
+    border: none;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero button a {
+    text-decoration: none;
+    color: #222;
+}
+
+.hero button:hover {
+    background-color: #d75df5;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* ===============================
+   Feature Cards Section
+================================ */
+.feature1 {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 80px 20px;
+}
+
+.feature11 {
+    width: 320px;
+    height: 280px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.feature11:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* ===============================
+   Feature Content Section
+================================ */
+.feature3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 10%;
+    background-color: white;
+}
+
+.feature31 h1 {
+    font-size: 44px;
+    color: #3e3676;
+    margin-bottom: 20px;
+}
+
+.feature31 p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.feature32 img {
+    width: 380px;
+    border-radius: 20px;
+}
+
+/* ===============================
+   Image Highlight Section
+================================ */
+.feature41,
+.feature42,
+.feature43 {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.feature42 h1 {
+    font-size: 32px;
+    color: #3e3676;
+}
+
+.feature43 img {
+    width: 80%;
+    max-width: 800px;
+    border-radius: 30px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+/* ===============================
+   Info Boxes
+================================ */
+.feature5 {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 70px 20px;
+    background-color: white;
+}
+
+.feature51 {
+    max-width: 280px;
+    text-align: center;
+}
+
+.feature51 img {
+    width: 90px;
+    margin-bottom: 20px;
+}
+
+.feature51 h1 {
+    font-size: 26px;
+    color: #3e3676;
+    margin-bottom: 10px;
+}
+
+.feature51 h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.text {
+    font-size: 16px;
+}
+
+.text a {
+    text-decoration: none;
+    color: #3e3676;
+    font-weight: 500;
+}
+
+.text a:hover {
+    color: #d75df5;
+    text-decoration: underline;
+}
+
+/* ===============================
+   Foo
